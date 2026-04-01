@@ -6,6 +6,12 @@ class Person:
         self.name = name
         self.myAge = age
     
+    def __str__(self): # print(p1)
+        return  "ID: " + str(self.ID) + ", name: " + self.name + ", age: " + str(self.myAge)
+    
+    def __repr__(self): # print([p1, p2])
+        return str(self.ID) + " " + self.name
+
     # getter method
     def getAge(self):
         return self.myAge
